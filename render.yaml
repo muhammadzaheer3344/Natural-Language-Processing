@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: trinlp-api
+    runtime: docker
+    rootDir: Phase-06_TriNLP-Deployment
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: HF_HUB_DISABLE_XET
+        value: "1"
+      - key: HF_HUB_DISABLE_PROGRESS_BARS
+        value: "1"
