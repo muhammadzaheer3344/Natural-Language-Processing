@@ -1,0 +1,4 @@
+Model loading failed: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>
+INFO:     127.0.0.1:55789 - "POST /sentiment HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:55792 - "POST /qa HTTP/1.1" 503 Service Unavailable
+INFO:     127.0.0.1:55798 - "GET /health HTTP/1.1" 200 OK
