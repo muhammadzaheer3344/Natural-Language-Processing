@@ -15,7 +15,18 @@ import os
 import requests
 import streamlit as st
 
-API_URL = os.environ.get("TRINLP_API_URL", "http://localhost:8000")
+
+def get_api_url():
+    api_url = os.environ.get("TRINLP_API_URL")
+    if not api_url:
+        try:
+            api_url = st.secrets.get("TRINLP_API_URL")
+        except (FileNotFoundError, KeyError):
+            api_url = None
+    return (api_url or "http://localhost:8000").rstrip("/")
+
+
+API_URL = get_api_url()
 
 st.set_page_config(page_title="TriNLP", page_icon="🧠", layout="centered")
 
