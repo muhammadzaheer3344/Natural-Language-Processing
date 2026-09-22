@@ -1,3 +1,14 @@
+---
+title: TriNLP
+emoji: 🧠
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 5.0.0
+app_file: app.py
+pinned: false
+---
+
 # Phase 6 — TriNLP Deployment
 
 The deployment phase: three NLP tasks (sentiment, NER, question-answering) served over
