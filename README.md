@@ -13,7 +13,7 @@ production-shaped API with a UI.
 | 3 | [`Phase-03_CineMood-LSTM-GRU`](Phase-03_CineMood-LSTM-GRU/) | Movie review sentiment (IMDB) | Sequence models: LSTM / GRU / BiLSTM | GRU, 86.89% test accuracy |
 | 4 | [`Phase-04_CineMood-BERT`](Phase-04_CineMood-BERT/) | Movie review sentiment (IMDB, same problem) | Fine-tuned DistilBERT (transformer) | 91.48% test accuracy |
 | 5 | [`Phase-05_DocuMind-RAG`](Phase-05_DocuMind-RAG/) | Document question-answering | Retrieval-Augmented Generation (Chroma vector DB + embeddings) | Vector store + chunk artifacts |
-| 6 | [`Phase-06_TriNLP-Deployment`](Phase-06_TriNLP-Deployment/) | Serving NLP models | FastAPI backend + Streamlit frontend | Working API + UI (sentiment, NER, QA) |
+| 6 | [`Phase-06_TriNLP-Deployment`](Phase-06_TriNLP-Deployment/) | Serving NLP models | Streamlit Cloud app | Working UI (sentiment, NER, QA) |
 
 ## The arc
 
@@ -23,7 +23,7 @@ harder tooling thrown at it:
 ```
 TF-IDF + classical ML  →  learned embeddings + NN  →  sequence models (LSTM/GRU)
         →  pretrained transformers (BERT)  →  retrieval-augmented generation
-        →  deployment (FastAPI + Streamlit)
+          → deployment (Streamlit Cloud)
 ```
 
 Phases 1–2 and 3–4 are deliberately paired: same dataset, same problem, two techniques,
